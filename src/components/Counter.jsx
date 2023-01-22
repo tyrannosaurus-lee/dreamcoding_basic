@@ -18,7 +18,13 @@ export default function Counter(){
                 onClick={() => {
                     //count++;
                     //console.log(count);
-                    setCount(count + 1);
+                    //setCount(count + 1);
+                    /*
+                    setCount((prev) => {
+                        return prev + 1;
+                    })
+                    */
+                   setCount((prev) => prev + 1);
                 }}
             >
                 Add +
