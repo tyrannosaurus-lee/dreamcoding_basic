@@ -1,9 +1,25 @@
 import './App.css';
+import Avatar from './components/Avatar';
 import Profile from './components/Profile';
 
 function AppProfile() {
+  const handleClick = (event) => {
+    console.log(event);
+    alert('버튼이 클릭됨');
+  };
   return (
     <>
+      {/* 
+      <button onClick={(event) => {
+        console.log(event);
+        alert('버튼이 클릭됨');
+      }}>버튼</button>
+       */}
+       <button onClick={handleClick}>버튼</button>
+      <Avatar
+        image="https://www.splitshire.com/wp-content/uploads/2020/11/SplitShire-20-5034.jpg"
+        isNew = {true}
+      />
       <Profile 
         image="https://www.splitshire.com/wp-content/uploads/2020/11/SplitShire-20-5034.jpg"
         name="Rina Lee"
