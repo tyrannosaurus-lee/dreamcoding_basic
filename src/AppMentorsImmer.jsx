@@ -35,6 +35,8 @@ export default function AppMentorsImmer(){
         /* 
         delete
         person을 가져와서 mentor를 삭제해야하므로
+        삭제하고자하는 mentor의 index를 가져와서 찾고자하는 이름인지 그 index를 찾은 다음
+        person에 있는 mentors에 있는 해당 index의 item을 하나 삭제해줌
         */
        const index = person.mentors.findIndex(m=> m.name === name);
        person.mentors.splice(index, 1);
